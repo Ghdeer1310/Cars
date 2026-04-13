@@ -12,7 +12,7 @@ The website also includes a simple login system and interactive UI elements to e
 
 ---
 
-## 🎯 Features
+## Features
 - Simple Login System (Front-end)
 -  Dynamic Header with Visual Background (GIF/Video)
 -  Smooth Navigation Bar
