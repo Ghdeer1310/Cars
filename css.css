@@ -1,0 +1,194 @@
+/* ===== General ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* ===== Login Page ===== */
+.login-page {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background: #222;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #444;
+  color: #f39c12;
+}
+
+/* ===== Content ===== */
+.content {
+  padding: 40px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===== Cards ===== */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Layout (Gallery & Cards) ===== */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Video Header ===== */
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.video-header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.video-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ===== About Card (خاص فيك) ===== */
+.about-card {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #444;
+  line-height: 1.7;
+  margin: 60px auto;
+}
+
+.about-card h2 {
+  color: #222;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #555;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width:768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}.video-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

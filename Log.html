@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Luxury Cars</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body class="login-page">
+  <div class="overlay"></div>
+
+  <div class="login-box">
+    <h2>Welcome Back</h2>
+    <form onsubmit="return loginCheck()">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+<script>
+  function loginCheck() {
+    const email = document.getElementById('email').value;
+    const pass = document.getElementById('password').value;
+
+    // التحقق من الإيميل (بسيط)
+    const emailValid = email.includes("@") && email.includes(".");
+
+    // التحقق من الباسوورد (7 أرقام فقط)
+    const passValid = /^\d{7}$/.test(pass);
+
+    if (emailValid && passValid) {
+      window.location.href = "index.html";
+    } else {
+      alert("Enter a valid email and a 7-digit password");
+    }
+
+    return false;
+  }
+</script>
+
+</body>
+</html>

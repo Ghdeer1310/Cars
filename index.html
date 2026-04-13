@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Luxury Cars</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classic.html">Classic</a></li>
+    <li><a href="modern.html">Modern</a></li>
+    <li><a href="suv.html">SUV</a></li>
+    <li><a href="sports.html">Sports</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+<header class="video-header"> 
+  <img src="videos/WOMANSUV.jpg">
+
+  <div class="video-text">
+    <h1>Luxury Cars</h1>
+    <p>Experience elegance, power, and timeless design</p>
+  </div>
+
+</header>
+
+  
+<section class="content">
+  <h1>Luxury Cars Blog</h1>
+  <p>Discover the beauty of luxury cars through time</p>
+
+  <h2>About the Website</h2>
+  <p>This website showcases different types of luxury cars 
+    including classic, modern, SUV and sports models.</p>
+
+  <p id="welcome"></p>
+
+
+  <div class="gallery">
+    <div class="card">
+      <img src="images/gos.jpg" alt="Sports Car">
+      <h3>Sports Car</h3>
+      <p>Year: 2024</p>
+      <p>Price: $120,000</p>
+    </div>
+
+    <div class="card">
+      <img src="images/moderncar2023.jpg" alt="Modern Car">
+      <h3>Modern Car</h3>
+      <p>Year: 2023</p>
+      <p>Price: $80,000</p>
+    </div>
+
+    <div class="card">
+      <img src="images/suvO.jpg" alt="SUV Car">
+      <h3>SUV Car</h3>
+      <p>Year: 2022</p>
+      <p>Price: $70,000</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Luxury Cars | Developed by Ghadeer Mohammed</p>
+</footer>
+
+<script>
+  const user = localStorage.getItem("user");
+  if(user){
+    document.getElementById("welcome").innerText = "Welcome, " + user;
+  }
+</script>
+
+</body>
+</html>
